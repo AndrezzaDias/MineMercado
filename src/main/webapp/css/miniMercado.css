@@ -1,0 +1,11 @@
+label.ajuste {
+	display: inline-block;
+	width: 77px;
+	float: left;
+}
+
+fieldset {
+	display: block;
+	width: 660px;
+	float: left;
+}

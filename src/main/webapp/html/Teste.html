@@ -2,21 +2,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Mine Mercado</title>
-
-   <style type="text/css">
-   label.ajuste {
-	display: inline-block;
-    width: 77px;
-    float:left;
-}
-     fieldset{
-   display: block;
-   width: 660px;
-   float:left;
- }
-
-   </style>
+<title>MiniMercado</title>
+<link rel="stylesheet" href="../css/miniMercado.css">
 </head>
 <body>
 		<div>
@@ -24,11 +11,11 @@
         <p></p>
     </div>
     <form  action="" method="POST" name="formulario">
-        <fieldset><legend><h1>Mine Mercado</h1></legend>
+        <fieldset><legend><h1>MiniMercado</h1></legend>
                 <div >
                 <p></p>
                    <Label class="ajuste">Item:</Label> 
-                   <input type="text" nome="nome" id="nomeIt" maxlength="50" size="60"/><br>
+                   <input type="text" name="nome" id="nomeIt" maxlength="50" size="60"/><br>
                    <p></p>
                    <label class="ajuste">Descrição:</label>
                    <textarea name="descrição" rows="5" cols="33" maxlength="60" id="nomeDes"></textarea><br>
@@ -37,24 +24,6 @@
           </div>
         </fieldset>
     </form>
-    <script type="text/javascript">
-    
-   
-    function capturar () {
-    	capturar = document.getElementById('valor').value;
-       if(valor.value < 20 ){
-    	   alert("Valor menor que 20");
-       }
-    }
-    
-    function validar() {
-		var preco = document.getElementById("valor");
-		if(preco.value == ""){
-			alert("Valor não informado");
-			preco.focus();
-		}
-		
-	}
-    </script>
+    <script src="../script/miniMercado.js"></script>
 </body>
 </html>
